@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>CS565 by TiarkRompf</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="without-description">
+        <h1>CS565</h1>
+        <p></p>
+        <p class="view"><a href="https://github.com/TiarkRompf/cs565">View the Project on GitHub <small>TiarkRompf/cs565</small></a></p>
+        <ul>
+          <li><a href="#about"><strong>About</strong></a></li>
+          <li><a href="#coq"><strong>Coq</strong></a></li>
+          <li><a href="#schedule"><strong>Schedule</strong></a></li>
+          <li><a href="#topics"><strong>Homework</strong></a></li>
+          <!--<li><a href="https://github.com/TiarkRompf/cs565">View On <strong>GitHub</strong></a></li>-->
+        </ul>
+      </header>
+      <section>
+      <div class="title">
+        <h1>
+<a name="cs565" class="anchor" href="#cs565"><span class="octicon octicon-link"></span></a>Programming Languages</h1>
+        <p>Spring 2015, 3 credits. Instructor: Tiark Rompf. TA: Baharak Saberidokht.</p>
+        <p>Links to <a href="https://piazza.com/purdue/spring2015/cs565/home">Piazza</a> and <a href="https://mycourses.purdue.edu/webapps/login/">Blackboard</a></p>
+      </div>
+
+      <blockquote>
+        <p>Meetings are Monday, Wednesday, Friday 10:30am to 11:20am Felix Haas Hall G066.</p>
+      </blockquote>
+
+        <h1><a name="about" class="anchor" href="#about"><span class="octicon octicon-link"></span></a>About the Course</h1>
+
+<p>
+This course will examine the design and implementation of programming
+languages from a foundational perspective.&nbsp; Our goal will be to
+develop tools that will enable us to both design and specify new
+language features, to precisely understand the rationale for existing
+features in modern languages, and to understand how design decisions
+can impact implementations.&nbsp; The course will be divided into roughly
+three parts: (1) principles (e.g., semantics, type systems, specifications);
+(2) proof techniques and formal reasoning and (3) automated theorem proving
+using the Coq proof assistant. &nbsp;  Our discussion of principles will be
+crafted in the context of definitions and theorems that capture salient
+properties of modern languages.  The validation of these theorems will be
+undertaken using Coq, a powerful theorem prover and mechanized proof
+assistant.</p>
+
+<p>
+A detailed syllabus can be found <a
+ href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/syllabus.pdf">here</a> (note: this document is from last year).
+For general policies about academic integrity etc. please see <a href="http://spaf.cerias.purdue.edu/cpolicy.html">here</a>.
+</p>
+
+<h1><a name="coq" class="anchor" href="#"><span class="octicon octicon-link"></span></a>Coq</h1>
+
+<p>
+All assignments and course lectures will take place using the mechanized proof assistant, <a href="http://coq.inria.fr">Coq</a>.  
+You will need to download version <a href="http://coq.inria.fr/download">8.4</a>, as well as an editor to facilitate
+writing interactive proofs.  <a href="http://proofgeneral.inf.ed.ac.uk">Proof General</a> (which works
+with Emacs) and  <a href="http://coq.inria.fr/download">CoqIde</a>, a standalone graphical editor are both
+good choices. On MacOS, Emacs, Coq and ProofGeneral are all easily installed using <a href="http://brew.sh">homebrew</a>.
+</p>
+
+
+<h1><a name="" class="anchor" href="#"><span class="octicon octicon-link"></span></a>Course Text</h1>
+<p>
+The course text is <a href="http://www.cis.upenn.edu/~bcpierce/sf">Software Foundations</a>.
+We will follow the material in  the text closely.  Each lecture will cover the 
+material in the chapter by reviewing the corresponding source code and proofs.
+</p>
+
+
+<h1><a name="schedule" class="anchor" href="#schedule"><span class="octicon octicon-link"></span></a>Lectures</h1>
+
+<p>
+We're following the blue path <a href="http://www.cis.upenn.edu/~bcpierce/sf/current/deps.html">here</a>
+</p>
+<!--<p>
+Basics  {<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Basics.v">v</a>,
+         <a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Basics.html">html</a>}<br>
+Induction  {<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Induction.v">v</a>,
+         <a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Induction.html">html</a>}<br>
+Lists  {<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Lists.v">v</a>,
+         <a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Lists.html">html</a>} <br>
+Poly  {<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Poly.v">v</a>,
+         <a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Poly.html">html</a>} <br>
+Gen  {<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Gen.v">v</a>,
+         <a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Gen.html">html</a>} <br>
+Prop {<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Prop.v">v</a>,
+         <a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Prop.html">html</a>}<br>
+Logic {<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Logic.v">v</a>,
+         <a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Logic.html">html</a>}<br>
+SfLib  {<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/SfLib.v">v</a>,
+         <a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/SfLib.html">html</a>}<br>
+Imp  {<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Imp.v">v</a>,
+         <a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Imp.html">html</a>}<br>
+ImpCEvalFun  {<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/ImpCEvalFun.v">v</a>,
+             <a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/ImpCEvalFun.html">html</a>}<br>
+Equiv  {<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Equiv.v">v</a>,
+       <a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Equiv.html">html</a>}<br>
+Hoare  {<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Hoare.v">v</a>,
+       <a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Hoare.html">html</a>}<br>
+Hoare2  {<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Hoare2.v">v</a>,
+       <a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Hoare2.html">html}</a><br>
+Smallstep  {<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Smallstep.v">v</a>,
+       <a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Smallstep.html">html}</a><br>
+Types  {<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Types.v">v</a>,
+       <a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Types.html">html}</a> <br>
+Stlc   {<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Stlc.v">v</a>,
+       <a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Stlc.html">html}</a><br>
+Norm   {<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Norm.v">v</a>,
+       <a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Norm.html">html}</a><br>
+MoreStlc   {<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/MoreStlc.v">v</a>,
+       <a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/MoreStlc.html">html}</a><br>
+References   {<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/References.v">v</a>,
+       <a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/References.html">html}</a><br>
+Subtyping   {<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Sub.v">v</a>,
+       <a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Sub.html">html}</a><br>
+</p>-->
+
+<h1><a name="topics" class="anchor" href="#schedule"><span class="octicon octicon-link"></span></a>Assignments</h1>
+
+<p>Your job is to complete all 1 and 2 star exercises in the given Coq file, except those marked as optional.
+Completing 3 star exercises or those marked optional is not required, but will improve your understanding, 
+and can compensate for errors in other exercises.</p>
+<p>
+Completed Coq files need to be submitted via <a href="https://mycourses.purdue.edu/webapps/login/">Blackboard</a>
+before midnight on the given date. Make sure that Coq accepts your file in its entirety. If it does not, it will 
+not be graded. You can use <code>Admitted</code> to force Coq to accept incomplete proofs.
+</p>
+<p>
+<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Basics.v">Basics.v</a>: due on Fri, Jan 23</br>
+<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Induction.v">Induction.v</a>: due on Sun, Feb 01</br>
+<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Lists.v">Lists.v</a>: due on Sun, Feb 01</br>
+<a href="http://www.cs.purdue.edu/homes/suresh/565-Spring2013/sf/full/Poly.v">Poly.v</a>: due on Sun, Feb 08</br>
+<a href="http://www.cis.upenn.edu/~bcpierce/sf/current/MoreCoq.v">MoreCoq.v</a>: due on Sun, Feb 15</br>
+<a href="http://www.cis.upenn.edu/~bcpierce/sf/current/Logic.v">Logic.v</a>: due on Sun, Feb 15</br>
+<a href="http://www.cis.upenn.edu/~bcpierce/sf/current/Prop.v">Prop.v</a>: due on Sun, Feb 22</br>
+<a href="http://www.cis.upenn.edu/~bcpierce/sf/current/MoreLogic.v">MoreLogic.v</a>: due on Sun, Feb 22</br>
+<a href="http://www.cis.upenn.edu/~bcpierce/sf/current/Imp.v">Imp.v</a>: due on Sun, Feb Mar 1</br>
+<a href="http://www.cis.upenn.edu/~bcpierce/sf/current/Equiv.v">Equiv.v</a>: due on Sun, Mar 1</br>
+<a href="http://www.cis.upenn.edu/~bcpierce/sf/current/Hoare.v">Hoare.v</a>: due on Sun, Mar 8</br>
+<a href="http://www.cis.upenn.edu/~bcpierce/sf/current/Hoare2.v">Hoare2.v</a>: due on Sun, Mar 15</br>
+<a href="http://www.cis.upenn.edu/~bcpierce/sf/current/Smallstep.v">Smallstep.v</a>: due on Tues, Mar 31</br>
+<a href="http://www.cis.upenn.edu/~bcpierce/sf/current/Auto.v">Auto.v</a>: (no exercises)</br>
+<a href="http://www.cis.upenn.edu/~bcpierce/sf/current/Types.v">Types.v</a>: due on Tues, April 7. </br>
+This time, homework includes exercise '3 stars (finish_progress)' and all of 'variation 1 ... 6' </br>
+<a href="http://www.cis.upenn.edu/~bcpierce/sf/current/Stlc.v">Stlc.v</a>: due on Tues, April 14. </br>
+<a href="http://www.cis.upenn.edu/~bcpierce/sf/current/StlcProp.v">StlcProp.v</a>: due on Tues, April 21. </br>
+Homework includes all of 'variation 1 ... 7' </br>
+<a href="http://www.cis.upenn.edu/~bcpierce/sf/current/MoreStlc.v">MoreStlc.v</a>: due on Tues, April 21. </br>
+<a href="http://www.cis.upenn.edu/~bcpierce/sf/current/References.v">References.v</a>: due on Thursday, April 30. </br>
+This is the last homework for the class</br>
+</br>
+
+</p>
+
+
+<h1><a name="topics" class="anchor" href="#schedule"><span class="octicon octicon-link"></span></a>Midterm Exam</h1>
+<p>During regular class hours on Wednesday, March 11. You will need to complete questions similar to the homework
+assignments in Coq, on a department laptop. Laptops will have Coq, CoqIDE and Emacs+ProofGeneral installed,
+as well as a copy of the SF book. Laptops will not have network access.</p>
+
+
+<h1><a name="topics" class="anchor" href="#schedule"><span class="octicon octicon-link"></span></a>Final Exam</h1>
+<p>The Final exam is scheduled for 5/5/2014, 7pm - 9pm in Haas <strike>G066</strike> G040. 
+The format will be the same as the midterm, but the duration will be two hours instead of one.
+</p>
+
+<p>The Final exam will also serve as Ph.D qualifying examination for this subject.</p>
+
+
+
+<h1><a name="topics" class="anchor" href="#schedule"><span class="octicon octicon-link"></span></a>Optional Oral Presentation</h1>
+<p>For students who would like to have another data point towards their final grade, there is the option
+of an additional oral presentation.</p>
+
+<p>This will work as follows: you will meet with the instructor for 15-20 minutes and present your solutions
+to exercises from the SF book that were not part of the regular homework (3-star and up). The instructor will
+ask questions: both about the solutions you present, and about the material of the class in general.
+</p>
+
+<p>The additional grade will be determined based on the difficulty and number of of the exercises you present,
+and on your understanding of the material. <strong>Please note:</strong> while obviously the goal is to
+potentially increase your final grade, it is also possible that your overall grade may <i>decrease</i>
+if you do not do well in the oral presentation!
+</p>
+
+
+<p>Oral presentations can be help on Friday May 1, Thursday May 7, and Friday May 8. To register, send
+email to the instructor before Midnight on Wed, Apr 29 with your availability on these dates and a list
+of exercises you intend to present.
+</p>
+
+<p>Please note again that oral presentations are entirely optional, and may both increase or decrease
+your final grade.
+</p>
+
+
+
+
+
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/TiarkRompf">TiarkRompf</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
